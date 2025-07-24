@@ -21,7 +21,7 @@ function mostrarProductos() {
 // Elegir producto y cantidad
 function realizarCompra() {
   mostrarProductos();
-  let seleccion = parseInt(prompt("Ingresá el número del producto que querés comprar (1-3):"));
+  let seleccion = parseInt(prompt("Ingresá el número del producto que querés comprar (1-5):"));
   if (seleccion < 1 || seleccion > productos.length || isNaN(seleccion)) {
     alert("Selección inválida.");
     return;
